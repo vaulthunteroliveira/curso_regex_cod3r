@@ -11,7 +11,7 @@ const write = (nomeArquivo, conteudo) => {
         filesystem.mkdirSync(alteradosdir)
     }
 
-    filesystem.writeFileSync(`${dirname}/${nomeArquivo}`, conteudo, {encoding: 'utf8'})
+    filesystem.writeFileSync(`${alteradosdir}/${nomeArquivo}`, conteudo, {encoding: 'utf8'})
 }
 
 module.exports = {read, write}
